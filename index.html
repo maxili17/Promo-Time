@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario de clases</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Horario de clases</h1>
+        <div id="signup-form" class="form-container">
+            <h2>Registro</h2>
+            <form id="signup">
+                <input type="text" id="name" placeholder="Nombre completo" required>
+                <input type="email" id="email" placeholder="Correo electrónico" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+        <div id="login-form" class="form-container">
+            <h2>Iniciar sesión</h2>
+            <form id="login">
+                <input type="email" id="login-email" placeholder="Correo electrónico" required>
+                <input type="password" id="login-password" placeholder="Contraseña" required>
+                <button type="submit">Iniciar sesión</button>
+            </form>
+        </div>
+        <div id="schedule" class="form-container" style="display:none;">
+            <h2>Horario de clases</h2>
+            <select id="classroom">
+                <option value="101">Aula 101</option>
+                <option value="102">Aula 102</option>
+            </select>
+            <div id="class-schedule"></div>
+            <button id="logout">Cerrar sesión</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
